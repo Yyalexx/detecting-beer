@@ -14,12 +14,10 @@ try:
     # ПРОВЕРКА ПРИ ЗАПУСКЕ СЕРВИСА
     # Если файл таблицы существует, удаляем его
     if os.path.isfile(path_to_df):
-        # Считываем таблицу из файла
         os.remove(path_to_df)
     
         # Создаем таблицу таблицу
     predict_df = pd.DataFrame(columns=col_list)
-
 
     # Создаём подключение к серверу на локальном хосте
     connection = pika.BlockingConnection(pika.ConnectionParameters(host='rabbitmq'))
