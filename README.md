@@ -1,9 +1,9 @@
 # ТЕМА ПРОЕКТА  
 ## Определение количества товарных позиций по фотографиям витрин. 
-(python, numpy, pandas, PIL, torch, yolov5, json, pika, RabbitMQ, Docker Compose)
+(python, json, numpy, pandas, PIL, torch, yolov5, pika, RabbitMQ, Docker Compose)
 ## ПОСТАНОВКА ЗАДАЧИ
 
-<img align="right" width="154" height="205" src=img/49124b47-d05b-31dc-fad5-cd51839515be.jpg>
+<img align="right" width="154" height="205" src=img/4.jpg>
 
 Заказчиком является торговая фирма - генеральный дистрибьютор производителя пива и крекера [ОАО ВИЗИТ](https://www.vizitbeer.ru/).
 
