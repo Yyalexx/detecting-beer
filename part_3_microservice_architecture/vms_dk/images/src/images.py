@@ -23,7 +23,19 @@ while True:
         #Функция для изменения размеров изображения и переноса изображения в папку resized
         def scale_img(input_image_path,
                         path_to_volume=path_to_volume):
+            """
+                Функция приводит изображение к размеру 640х640, 
+                производит поворот изображения в соответствии с exif данными.
 
+                    Args:
+                        input_image_path (string): путь к изображению
+                        path_to_volume (string): путь к внутреннему директорию
+                                    
+                    Returns:
+                        msg_dict (dictionary): словарь, 
+                        где по ключу 'id' находится id изображения,
+                        а по ключу 'body' - путь к обработанному изображению    
+                """
             img_id = input_image_path.split('/')[-1][:-4]
             path_to_resized_img = path_to_volume +'resized_images/'+img_id+'.jpg' 
             original_image = Image.open(input_image_path)
@@ -40,7 +52,7 @@ while True:
             msg_dict = {'id': img_id,'body': path_to_resized_img}
             
             return msg_dict
-
+        # Список входных изображений с путями
         inp_img_list = glob.glob(path_to_volume+'input_images/*.jpg')
         
         #Подключение к серверу на локальном хосте:
@@ -48,8 +60,7 @@ while True:
         channel = connection.channel()
         #Создаём очередь images
         channel.queue_declare(queue='images')
-
-        # 
+        # Обрабатываем все входные изображения
         for inp_img in inp_img_list:
             
             msg = scale_img(inp_img)

@@ -6,7 +6,7 @@ import os.path
 
 path_to_volume = './vvol/'
 path_to_df = path_to_volume+'predict_df.csv'
-
+# Формируем список столбцов датафрейма
 col_list = ['img_id']
 col_list.extend(list(range(5)))
 
@@ -29,6 +29,7 @@ try:
 
     # Создаём функцию callback для обработки данных из очереди
     def callback(ch, method, properties, body):
+        # Формируем строку датафрейма в виде списка
         predict_list = [json.loads(body)['id']]
         predict_list.extend(json.loads(body)['body'])
         print(f'Value {json.loads(body)} received from queue {method.routing_key}')

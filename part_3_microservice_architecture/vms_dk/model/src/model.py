@@ -6,10 +6,10 @@ from PIL import Image
 import os
 import os.path
 
-
+# Списки обрабатываемых классов для моделей
 model_1_class_list = [0]
 model_2_class_list = [1,2,3,4]
-
+# Модели для обрабатываемых классов
 model_1 = torch.hub.load('./yolov5', 'custom', path='./model_cl_0.pt', 
             source='local', device='cpu', force_reload=True, _verbose=False)
 model_2 = torch.hub.load('./yolov5', 'custom', path='./model_cl_1_4.pt', 
@@ -32,23 +32,24 @@ try:
         path_to_img =  json.loads(body)['body']
         img = Image.open(path_to_img)
         img_id = json.loads(body)['id']
-
-        d={}
+        
+        d={}  # Словарь предиктов всех обрабатываемых классов
+        # Заполняем словарь предиктов предиктами первой модели
         results = model_1(img, size=640)
         col_class=results.xyxy[0][:,5]
         for cls in model_1_class_list:
             d[cls] = len(np.where(col_class==cls)[0])
-
+        # Заполняем словарь предиктов предиктами второй модели
         results = model_2(img, size=640)
         col_class=results.xyxy[0][:,5]
         for cls in model_2_class_list:
             d[cls] = len(np.where(col_class==cls)[0])
-
+        # Преобразуем словарь предиктов в список
         curr_cl_list = []
         for i in range(len(list(d.keys()))):
             curr_cl_list.append(d[i])
         msg = {'id': img_id, 'body': curr_cl_list}
-        
+        # Публикуем сообщение в очередь predict
         channel.basic_publish(exchange='',
                         routing_key='predict',
                         body=json.dumps(msg))
