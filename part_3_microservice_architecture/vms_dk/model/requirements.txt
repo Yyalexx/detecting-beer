@@ -1,5 +1,4 @@
 pika==1.1.0
-
 # Base for yolov5-------------------------------------------------------
 gitpython
 ipython  # interactive notebook
