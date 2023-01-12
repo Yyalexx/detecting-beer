@@ -1,0 +1,37 @@
+version: '3.7'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    hostname: rabbitmq
+    restart: always
+    ports:
+       - 5672:5672
+       - 15672:15672
+  images:
+    build:
+      context: ./images
+    restart: always
+    depends_on:
+      - rabbitmq
+    volumes: 
+      - ../vdkvol/:/usr/src/app/vvol/
+  model:
+    build:
+      context: ./model
+    restart: always
+    depends_on:
+      - rabbitmq
+      - images
+    volumes: 
+      - ../vdkvol/:/usr/src/app/vvol/
+  dataframe:
+    build:
+      context: ./dataframe
+    restart: always
+    depends_on:
+      - rabbitmq
+      - images
+      - model
+    volumes: 
+      - ../vdkvol/:/usr/src/app/vvol/
