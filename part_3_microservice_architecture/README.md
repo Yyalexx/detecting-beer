@@ -45,7 +45,4 @@
   - **input_images**
   - **resized_images**
   - *predict_df.csv*  
-  - *log.txt* 
-  
-   
 - *docker-compose.yml*  
