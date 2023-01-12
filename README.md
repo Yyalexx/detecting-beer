@@ -10,12 +10,12 @@
 В в этом проекте целях автоматизации анализа фотографий производится подсчет количества товарных позиций интересующего ассортимента на каждой фотографии.
 
 # Проект состоит из 3-х частей:
-- Часть 1: Разметка данных
-- Часть 2: Тренировка модели  
-- Часть 3: Сервис  
-### Часть 1: Разметка данных  
+- [Часть 1: Разметка данных](https://github.com/Yyalexx/detecting-beer/tree/master/part_1_data_labeling)
+- [Часть 2: Тренировка модели](https://github.com/Yyalexx/detecting-beer/tree/master/part_2_model_training)  
+- [Часть 3: Сервис](https://github.com/Yyalexx/detecting-beer/tree/master/part_3_microservice_architecture)  
+### [Часть 1: Разметка данных](https://github.com/Yyalexx/detecting-beer/tree/master/part_1_data_labeling)  
 Для разметки данных используется библиотека [label-studio](https://github.com/heartexlabs/label-studio) .
-### Часть 2: Тренировка модели  
+### [Часть 2: Тренировка модели](https://github.com/Yyalexx/detecting-beer/tree/master/part_2_model_training)  
 Для обучения была выбрана модель YOLOv5 от разработчика [ultralytics](https://ultralytics.com/).  
-### Часть 3: Сервис  
-Реализована микросервисная структура из 3-х серверов с контейнеризацией Docker Compose.
+### [Часть 3: Сервис](https://github.com/Yyalexx/detecting-beer/tree/master/part_3_microservice_architecture)  
+Реализована микросервисная структура из 3-х сервисов с контейнеризацией Docker Compose.
