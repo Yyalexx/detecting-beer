@@ -1,4 +1,7 @@
-# ПОСТАНОВКА ЗАДАЧИ
+# ТЕМА ПРОЕКТА  
+## Определение количества товарных позиций по фотографиям витрин. 
+(python, json, numpy, pandas, PIL, torch, yolov5, pika, RabbitMQ, Docker Compose)
+## ПОСТАНОВКА ЗАДАЧИ
 
 <img align="right" width="154" height="205" src=images/49124b47-d05b-31dc-fad5-cd51839515be.jpg>
 
@@ -9,7 +12,7 @@
 
 В в этом проекте целях автоматизации анализа фотографий производится подсчет количества товарных позиций интересующего ассортимента на каждой фотографии.
 
-# Проект состоит из 3-х частей:
+## Проект состоит из 3-х частей:
 - [Часть 1: Разметка данных](https://github.com/Yyalexx/detecting-beer/tree/master/part_1_data_labeling)
 - [Часть 2: Тренировка модели](https://github.com/Yyalexx/detecting-beer/tree/master/part_2_model_training)  
 - [Часть 3: Сервис](https://github.com/Yyalexx/detecting-beer/tree/master/part_3_microservice_architecture)  
