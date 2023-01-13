@@ -19,7 +19,7 @@
 - [Часть 2: Тренировка модели](https://github.com/Yyalexx/detecting-beer/tree/master/part_2_model_training)  
 - [Часть 3: Сервис](https://github.com/Yyalexx/detecting-beer/tree/master/part_3_microservice_architecture)  
 ### [Часть 1: Разметка данных](https://github.com/Yyalexx/detecting-beer/tree/master/part_1_data_labeling)  
-<img align="right" width="154" height="154" src=./img/predict_samples/4.jpg>  
+<img align="right" width="154" height="154" src=./img/predict_samples/18.jpg>  
 
 Для разметки данных используется библиотека [label-studio](https://labelstud.io/) .
 ### [Часть 2: Тренировка модели](https://github.com/Yyalexx/detecting-beer/tree/master/part_2_model_training)  
