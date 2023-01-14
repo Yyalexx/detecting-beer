@@ -48,39 +48,39 @@
   - *predict_df.csv*  
 - *docker-compose.yml*    
   &ensp;  
-  
+
 Контейнеры с сервисами загружены на [DOCKER HUB](https://hub.docker.com/)  
-- [контейнер с сервисом **images**](https://hub.docker.com/)  
-- [контейнер с сервисом **model**](https://hub.docker.com/)  
-- [контейнер с сервисом **dataframe**](https://hub.docker.com/)  
+- [контейнер с сервисом **images**](https://hub.docker.com/r/yyalexx/vms_dk_images/)  
+- [контейнер с сервисом **model**](https://hub.docker.com/r/yyalexx/vms_dk_model)  
+- [контейнер с сервисом **dataframe**](https://hub.docker.com/r/yyalexx/vms_dk_dataframe)  
 При сборке из готовых контейнеров надо поменять строки в файле *docker-compose.yml*:  
 
-строки:  
+***строки***:  
 
 images:  
 &ensp; build:  
 &ensp; &ensp; context: ./images  
-поменять на:  
+***поменять на:***  
 images:  
 &ensp; image: vms_dk_images:latest  
 &ensp; container_name: images  
 
-строки:  
+***строки:***  
 
 model:  
 &ensp; build:  
 &ensp; &ensp; context: ./model  
-поменять на:  
+***поменять на:***  
 model:  
 &ensp; image: vms_dk_model:latest  
 &ensp; container_name: model  
 
-строки:  
+***строки:***  
 
 dataframe:  
 &ensp; build:  
 &ensp; &ensp; context: ./dataframe  
-поменять на:  
+***поменять на:***  
 dataframe:  
 &ensp; image: vms_dk_dataframe:latest  
 &ensp; container_name: dataframe
