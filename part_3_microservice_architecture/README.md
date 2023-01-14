@@ -1,4 +1,4 @@
- # Сервис  
+ # Сервис (продакшен)  
  **Микросервисная архитектура** составлена из 3-х сервисов:  
  - **images**  
  - **model**
@@ -46,4 +46,41 @@
   - **input_images**
   - **resized_images**
   - *predict_df.csv*  
-- *docker-compose.yml*  
+- *docker-compose.yml*    
+  &ensp;  
+  
+Контейнеры с сервисами загружены на [DOCKER HUB](https://hub.docker.com/)  
+- [контейнер с сервисом **images**](https://hub.docker.com/)  
+- [контейнер с сервисом **model**](https://hub.docker.com/)  
+- [контейнер с сервисом **dataframe**](https://hub.docker.com/)  
+При сборке из готовых контейнеров надо поменять строки в файле *docker-compose.yml*:  
+
+строки:  
+
+images:  
+&ensp; build:  
+&ensp; &ensp; context: ./images  
+поменять на:  
+images:  
+&ensp; image: vms_dk_images:latest  
+&ensp; container_name: images  
+
+строки:  
+
+model:  
+&ensp; build:  
+&ensp; &ensp; context: ./model  
+поменять на:  
+model:  
+&ensp; image: vms_dk_model:latest  
+&ensp; container_name: model  
+
+строки:  
+
+dataframe:  
+&ensp; build:  
+&ensp; &ensp; context: ./dataframe  
+поменять на:  
+dataframe:  
+&ensp; image: vms_dk_dataframe:latest  
+&ensp; container_name: dataframe

@@ -17,14 +17,14 @@
 
 - [Часть 1: Разметка данных](https://github.com/Yyalexx/detecting-beer/tree/master/part_1_data_labeling)
 - [Часть 2: Тренировка модели](https://github.com/Yyalexx/detecting-beer/tree/master/part_2_model_training)  
-- [Часть 3: Сервис(продакшен)](https://github.com/Yyalexx/detecting-beer/tree/master/part_3_microservice_architecture)  
+- [Часть 3: Сервис (продакшен)](https://github.com/Yyalexx/detecting-beer/tree/master/part_3_microservice_architecture)  
 ### [Часть 1: Разметка данных](https://github.com/Yyalexx/detecting-beer/tree/master/part_1_data_labeling)  
 <img align="right" width="154" height="154" src=./img/predict_samples/18.jpg>  
 
 Для разметки данных используется библиотека [label-studio](https://labelstud.io/) .
 ### [Часть 2: Тренировка модели](https://github.com/Yyalexx/detecting-beer/tree/master/part_2_model_training)  
 Для обучения была выбрана модель YOLOv5 от разработчика [ultralytics](https://ultralytics.com/).  
-### [Часть 3: Сервис](https://github.com/Yyalexx/detecting-beer/tree/master/part_3_microservice_architecture)  
+### [Часть 3: Сервис (продакшен)](https://github.com/Yyalexx/detecting-beer/tree/master/part_3_microservice_architecture)  
 Реализована микросервисная структура из 3-х сервисов с контейнеризацией Docker Compose.  
 ## Промежуточные выводы  
 - Применение модели YOLOv5 продемонстрировало свою эффективность для поставленной задачи. 
