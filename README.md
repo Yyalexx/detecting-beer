@@ -17,7 +17,7 @@
 
 - [Часть 1: Разметка данных](https://github.com/Yyalexx/detecting-beer/tree/master/part_1_data_labeling)
 - [Часть 2: Тренировка модели](https://github.com/Yyalexx/detecting-beer/tree/master/part_2_model_training)  
-- [Часть 3: Сервис](https://github.com/Yyalexx/detecting-beer/tree/master/part_3_microservice_architecture)  
+- [Часть 3: Сервис(продакшен)](https://github.com/Yyalexx/detecting-beer/tree/master/part_3_microservice_architecture)  
 ### [Часть 1: Разметка данных](https://github.com/Yyalexx/detecting-beer/tree/master/part_1_data_labeling)  
 <img align="right" width="154" height="154" src=./img/predict_samples/18.jpg>  
 
@@ -25,4 +25,10 @@
 ### [Часть 2: Тренировка модели](https://github.com/Yyalexx/detecting-beer/tree/master/part_2_model_training)  
 Для обучения была выбрана модель YOLOv5 от разработчика [ultralytics](https://ultralytics.com/).  
 ### [Часть 3: Сервис](https://github.com/Yyalexx/detecting-beer/tree/master/part_3_microservice_architecture)  
-Реализована микросервисная структура из 3-х сервисов с контейнеризацией Docker Compose.
+Реализована микросервисная структура из 3-х сервисов с контейнеризацией Docker Compose.  
+## Промежуточные выводы  
+- Применение модели YOLOv5 продемонстрировало свою эффективность для поставленной задачи. 
+- Применение микросервисной структуры позволяет оперативно добавлять анализируемые товарные позиции.  
+## Основные итоги  
+- Создана микросервисная структура, инференс в реальном времени в автоматическом режиме анализирует количество товарных позиций одной позиции товарного ассортимента.  
+- Стали ясны конкретные задачи по развитию системы как в направлении расширения количества ассортиментных позиций, так и в направлении дальнейшего развития сервиса.
