@@ -55,32 +55,44 @@
 - [контейнер с сервисом **dataframe**](https://hub.docker.com/r/yyalexx/vms_dk_dataframe)  
 При сборке из готовых контейнеров надо поменять строки в файле *docker-compose.yml*:  
 
-***строки***:  
 
+***СТРОКИ:***
+```
 images:  
-&ensp; build:  
-&ensp; &ensp; context: ./images  
-***поменять на:***  
+  build:  
+    context: ./images 
+```
+
+***поменять на:***
+```  
 images:  
-&ensp; image: vms_dk_images:latest  
-&ensp; container_name: images  
-
-***строки:***  
-
+  image: vms_dk_images:latest  
+  container_name: images 
+```
+***СТРОКИ:***
+```
 model:  
-&ensp; build:  
-&ensp; &ensp; context: ./model  
-***поменять на:***  
+  build:  
+    context: ./model 
+```
+
+***поменять на:***
+```  
+images:  
+  image: vms_dk_model:latest  
+  container_name: model 
+```
+
+***СТРОКИ:***
+```
 model:  
-&ensp; image: vms_dk_model:latest  
-&ensp; container_name: model  
+  build:  
+    context: ./dataframe 
+```
 
-***строки:***  
-
-dataframe:  
-&ensp; build:  
-&ensp; &ensp; context: ./dataframe  
-***поменять на:***  
-dataframe:  
-&ensp; image: vms_dk_dataframe:latest  
-&ensp; container_name: dataframe
+***поменять на:***
+```  
+images:  
+  image: vms_dk_dataframe:latest  
+  container_name: dataframe 
+```
