@@ -25,7 +25,6 @@ try:
     # Объявляем очередь predict
     channel.queue_declare(queue='predict')
 
-    import shutil
     # Создаём функцию callback для обработки данных из очереди images
     def callback(ch, method, properties, body):
         print(f'Image received for processing {body}')
@@ -63,9 +62,10 @@ try:
         on_message_callback=callback,
         auto_ack=True
     )
-    print('...Waiting for messages, press CTRL+C to exit')
-
-    # Запускаем режим ожидания прихода сообщений
-    channel.start_consuming()
 except:
     print('Failed to connect to the queue')
+
+print('...Waiting for messages, press CTRL+C to exit')
+
+# Запускаем режим ожидания прихода сообщений
+channel.start_consuming()

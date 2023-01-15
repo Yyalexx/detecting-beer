@@ -42,11 +42,9 @@ try:
         auto_ack=True
         )
 
-
-    # Запускаем режим ожидания прихода сообщений
-    print('...Waiting for messages, press CTRL+C to exit')
-    channel.start_consuming()
 except:
     print('Failed to connect to the queue')
 
-
+# Запускаем режим ожидания прихода сообщений
+print('...Waiting for messages, press CTRL+C to exit')
+channel.start_consuming()
