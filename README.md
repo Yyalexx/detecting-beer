@@ -39,7 +39,7 @@
 Добавлены файлы *demo_predict_cl_0_1.ipynb* и *m_cl_1.pt*.  
 ### Примеры работы модели на тестовых данных
 
-<img align="" width="350" height="" src=./img/predict_samples/20.jpg> 
-<img align="right" width="350" height="" src=./img/predict_samples/21.jpg> 
-<img align="" width="350" height="" src=./img/predict_samples/22.jpg> 
-<img align="right" width="350" height="" src=./img/predict_samples/23.jpg> 
+<img align="" width="400" height="" src=./img/predict_samples/20.jpg> 
+<img align="right" width="400" height="" src=./img/predict_samples/21.jpg> 
+<img align="" width="400" height="" src=./img/predict_samples/22.jpg> 
+<img align="right" width="400" height="" src=./img/predict_samples/23.jpg> 
