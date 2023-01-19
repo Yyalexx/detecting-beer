@@ -34,12 +34,22 @@
 - Система полностью готова к расширению анализируемого ассортимента.
 - Определены конкретные задачи по развитию системы как в направлении расширения количества ассортиментных позиций, так и в направлении дальнейшего развития сервиса.  
   
-### Update 17.01.2023  
+  
+  ### Update 17.01.2023  
 Размечены данные для класса "Визит вечерний стекло 0.45", обучена модель.  
 Добавлены файлы *demo_predict_cl_0_1.ipynb* и *m_cl_1.pt*.  
-### Примеры работы модели на тестовых данных
+### Пример работы модели на тестовых данных
 
 <img align="" width="400" height="" src=./img/predict_samples/20.jpg> 
-<img align="right" width="400" height="" src=./img/predict_samples/21.jpg> 
-<img align="" width="400" height="" src=./img/predict_samples/22.jpg> 
-<img align="right" width="400" height="" src=./img/predict_samples/23.jpg> 
+  
+  ### Update 19.01.2023  
+Размечены данные для класса "Визит классический ПЭТ 1.5л", обучена модель *m_cl_1_2.pt* на два класса:  
+- "Визит классический ПЭТ 1.5л"
+- "Визит вечерний стекло 0.45".  
+Добавлены файлы *demo_predict_cl_0_1_2.ipynb* и *m_cl_1_2.pt*.  
+### Примеры работы модели на тестовых данных
+
+<img align="" width="400" height="" src=./img/predict_samples/27.jpg> 
+<img align="right" width="400" height="" src=./img/predict_samples/25.jpg> 
+<img align="" width="400" height="" src=./img/predict_samples/26.jpg> 
+<img align="right" width="400" height="" src=./img/predict_samples/24.jpg> 
