@@ -17,7 +17,7 @@
 
 - [Часть 1: Разметка данных](https://github.com/Yyalexx/detecting-beer/tree/master/part_1_data_labeling)
 - [Часть 2: Тренировка модели](https://github.com/Yyalexx/detecting-beer/tree/master/part_2_model_training)  
-- [Часть 3: Сервис (продакшен)](https://github.com/Yyalexx/detecting-beer/tree/master/part_3_microservice_architecture)  
+- [Часть 3: Сервис (продакшн)](https://github.com/Yyalexx/detecting-beer/tree/master/part_3_microservice_architecture)  
 ### [Часть 1: Разметка данных](https://github.com/Yyalexx/detecting-beer/tree/master/part_1_data_labeling)  
 <img align="right" width="154" height="154" src=./img/predict_samples/18.jpg>  
 
@@ -34,8 +34,10 @@
 - Система полностью готова к расширению анализируемого ассортимента.
 - Определены конкретные задачи по развитию системы как в направлении расширения количества ассортиментных позиций, так и в направлении дальнейшего развития сервиса.  
   
-  
-  ### Update 17.01.2023  
+## Деплой прототипа на **Streamlit Cloud**  
+<img align="" width="1000" height="" src=./img/predict_samples/30.jpg>  
+
+### Update 17.01.2023  
 Размечены данные для класса "Визит вечерний стекло 0.45", обучена модель.  
 Добавлены файлы *demo_predict_cl_0_1.ipynb* и *m_cl_1.pt*.  
 ### Пример работы модели на тестовых данных
