@@ -24,7 +24,7 @@
 Для разметки данных используется библиотека [label-studio](https://labelstud.io/) .
 ### [Часть 2: Тренировка модели](https://github.com/Yyalexx/detecting-beer/tree/master/part_2_model_training)  
 Для обучения была выбрана модель YOLOv5 от разработчика [ultralytics](https://ultralytics.com/).  
-### [Часть 3: Сервис (продакшен)](https://github.com/Yyalexx/detecting-beer/tree/master/part_3_microservice_architecture)  
+### [Часть 3: Сервис (продакшн)](https://github.com/Yyalexx/detecting-beer/tree/master/part_3_microservice_architecture)  
 Реализована микросервисная структура из 3-х сервисов с контейнеризацией Docker Compose.  
 ## Промежуточные выводы  
 - Применение модели YOLOv5 продемонстрировало свою эффективность для поставленной задачи. 
@@ -37,6 +37,8 @@
 ## Деплой прототипа на **Streamlit Cloud**  
 <img align="" width="1000" height="" src=./img/predict_samples/demo.gif>  
 
+### Update 7.02.2023
+Всего обучено 4 модели на 10 классов.
 ### Update 17.01.2023  
 Размечены данные для класса "Визит вечерний стекло 0.45", обучена модель.  
 Добавлены файлы *demo_predict_cl_0_1.ipynb* и *m_cl_1.pt*.  
