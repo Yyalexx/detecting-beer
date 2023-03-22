@@ -37,6 +37,8 @@
 ## Деплой прототипа на **Streamlit Cloud**  
 <img align="" width="1000" height="" src=./img/predict_samples/demo.gif>  
 
+### Update 22.03.2023  
+Всего обучено 8 моделей на 19 классов.
 ### Update 21.02.2023  
 Всего обучено 6 моделей на 15 классов.
 ### Update 17.02.2023  
